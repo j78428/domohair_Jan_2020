@@ -36,7 +36,6 @@ header {
     z-index: 10;
     top: 0;
     width: 100%;
-
     border-top: 3px solid transparent;
     border-bottom: 0;
     border-image: url(../images/line.png) 1 0 repeat;
@@ -115,8 +114,9 @@ header .btn_logout {
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
         0 12.5px 10px rgba(0, 0, 0, 0.06);
-    /*border-bottom: 3px solid transparent;
-    border-image: url(../images/line.png) 3 0 repeat;*/
+    border-top: 0;
+    border-bottom: 3px solid transparent;
+    border-image: url(../images/line.png) 3 0 repeat;
 }
 
 .login_form .navbar-brand {
