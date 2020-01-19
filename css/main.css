@@ -1,0 +1,726 @@
+@charset "utf-8";
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: FuturaPTHeavy, Arial, "Sans Serif", "微軟正黑體";
+    color: #272727;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*------------------------------------------------
+-                                                -
+-                   Header                       -
+-                                                -
+------------------------------------------------*/
+header {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+
+    border-top: 3px solid transparent;
+    border-image: url(../images/line.png) 1 0 repeat;
+}
+
+header .navbar-brand {
+    width: 150px;
+    background-size: 90%;
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px auto !important;
+    float: none;
+    display: block;
+}
+
+header .system_title {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+header .system_title span {
+    position: relative;
+}
+
+header .system_title span:before,
+header .system_title span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 65px;
+    height: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #ddd;
+}
+
+header .system_title span:before {
+    right: 100%;
+    margin-right: 12px;
+}
+
+header .system_title span:after {
+    left: 100%;
+    margin-left: 12px;
+}
+
+header .btn_logout {
+    position: absolute;
+    right: 30px;
+    top: 32px;
+}
+
+
+
+
+/*------------------------------------------------
+-                                                -
+-                   頁面樣式                     -
+-                                                -
+------------------------------------------------*/
+
+
+/*------------------ 頁面-登入 -------------------*/
+
+.login_form {
+    max-width: 330px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #FFF;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06);
+    border-bottom: 3px solid transparent;
+    border-image: url(../images/line.png) 3 0 repeat;
+}
+
+.login_form .navbar-brand {
+    width: 170px;
+    background-size: 90%;
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px auto !important;
+    float: none;
+    display: block;
+}
+
+.login_form .system_title {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login_form .system_title span {
+    position: relative;
+}
+
+.login_form .system_title span:before,
+.login_form .system_title span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 65px;
+    height: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #ddd;
+}
+
+.login_form .system_title span:before {
+    right: 100%;
+    margin-right: 12px;
+}
+
+.login_form .system_title span:after {
+    left: 100%;
+    margin-left: 12px;
+}
+
+.login_form .fill_form .fill_item {
+    margin-bottom: 10px;
+}
+
+.login_form .button_group .btn {
+    width: 100%;
+}
+
+
+
+/*------------------ 頁面-下載/上傳合約頁面 -------------------*/
+.content_block {
+    padding: 40px 0;
+}
+
+
+.bg_gray {
+    background-color: #f7f7f7;
+}
+
+
+.content_block .block_title,
+.content_block .block_message {
+    text-align: center;
+}
+
+.content_block .block_title {
+    margin-top: 10px;
+}
+
+.content_block .block_title:after {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 1px;
+    border-bottom: 1px solid #999;
+    margin: 20px auto;
+
+}
+
+.content_block .block_message {
+    color: #ef5654;
+}
+
+.content_block .thumbnail {
+    margin-bottom: 30px;
+    text-align: center;
+    border: 0;
+    border-radius: 0;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 10.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 20px rgba(0, 0, 0, 0.06);
+    padding: 11px;
+}
+
+.content_block .thumbnail h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.content_block .thumbnail .icon {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #eae2e9;
+    color: #af61a4;
+    border-radius: 50%;
+    margin: 6px auto;
+    text-align: center;
+    font-size: 26px;
+}
+
+
+.content_block .fill_form {
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    float: none;
+}
+
+.content_block .btn_confirm {
+    margin-left: 98px;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------
+-                                                -
+-                   共用設定                     -
+-                                                -
+------------------------------------------------*/
+.wrapper {}
+
+.main_content {
+    padding-top: 112px;
+    min-height: 100vh;
+}
+
+
+
+
+/*---------------- 按鈕 -----------------*/
+
+
+/*  按鈕 - 樣式  */
+
+.btn,
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:visited {
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 0;
+    transition: all .2s ease-out;
+}
+
+
+
+.btn_style1 {
+    background: #5493ce;
+    color: #fff;
+    border-color: transparent;
+}
+
+.btn_style1:hover {
+    background: #5A9DDB;
+    color: #fff;
+}
+
+.btn_style1:active,
+.btn_style1:focus {
+    background: #4A81B5;
+    color: #fff;
+}
+
+
+.btn_style2 {
+    background: transparent;
+    color: #5493ce;
+    border-color: #5493ce;
+}
+
+.btn_style2:hover {
+    background: #5A9DDB;
+    color: #fff;
+}
+
+.btn_style2:active,
+.btn_style2:focus {
+    background: #4A81B5;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/*  按鈕 - 大小  */
+
+/*.btn.btn-lg {
+    font-size: 16px;
+    padding: 25px 46px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}*/
+
+
+
+
+
+
+
+/*----------- 表單 / 輸入框 ----------*/
+
+
+.fill_form {
+    float: left;
+    width: 100%;
+}
+
+.fill_form:after {
+    content: "";
+    clear: none;
+}
+
+.fill_form .form_content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+
+.fill_form .fill_item,
+.fill_item {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.fill_form .fill_item label.item_title {
+    color: #666;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+}
+
+.fill_form .fill_item label.item_title span {
+    color: #FFCC00;
+    font-size: 20px;
+    line-height: 14px;
+}
+
+.fill_form .fill_item label.item_title span.tips {
+    color: #BBB;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+
+
+.fill_form .fill_item.horizontal label.item_title,
+.fill_form .fill_item.horizontal .item_content,
+.fill_item.horizontal label.item_title,
+.fill_item.horizontal .item_content {
+    display: inline-table;
+    vertical-align: top;
+}
+
+.fill_form .fill_item.horizontal label.item_title {
+    font-size: 16px;
+    margin-top: 6px;
+    width: 85px;
+    text-align: right;
+}
+
+.fill_form .fill_item.horizontal .item_content {
+    width: calc(100% - 100px);
+}
+
+
+.fill_form .alert {
+    float: left;
+    background: none;
+    color: #fb8988;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+
+.form-control {
+    border-radius: 0;
+    border-color: #d4d4d4;
+}
+
+
+.form-control.focus {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #FFCC00;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    background-color: #F7F9FB;
+}
+
+
+
+.form-control[readonly] {
+    background-color: #eaeaea;
+    border-color: transparent;
+}
+
+
+.form-control[readonly]:focus {
+    border-color: transparent;
+    outline: 0;
+    -webkit-box-shadow: 0px -1px 0 0px transparent inset;
+    box-shadow: 0px -1px 0 0px transparent inset;
+}
+
+
+.form-control[disabled] {
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+/*  輸入元件 - 錯誤提示  */
+
+input[type="text"].error,
+input[type="password"].error,
+select.error,
+textarea.error {
+    border: 1px solid #fb8988;
+    box-shadow: 0 0 0 1px #fb8988 inset;
+}
+
+.fill_item .error_message {
+    display: none;
+    color: #fb8988;
+    font-size: 14px;
+}
+
+
+
+.fill_item .error_message:before {
+    content: "\e101";
+    display: inline-block;
+    color: #fb8988;
+    text-align: center;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    border-radius: 20px;
+
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+/*  輸入元件 - 提示提示  */
+.fill_item .notice_message {
+    color: #999;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+/*-----------下拉選單-----------*/
+
+select {
+    /*padding-right: 54px !important;*/
+    appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../images/arrow-down.png) !important;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) center;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select.input-lg {
+    height: 46px;
+    line-height: 1.3333333;
+}
+
+
+
+
+
+
+
+/*---------------- Checkbox & Radio -----------------*/
+.checkbox+.checkbox,
+.radio+.radio {
+    margin-top: 10px;
+}
+
+
+.checkbox label,
+.radio label {
+    padding-left: 0;
+}
+
+
+
+
+/*  checkbox  */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label span {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background-image: url(../icon/check_box_nocheck.svg);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+input[type="checkbox"]:checked+label span {
+    background-image: url(../icon/check_box_checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="checkbox"]+label {
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-left: 45px;
+}
+
+
+
+
+/*  radio  */
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label span {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background-image: url(../icon/radio_nocheck.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+input[type="radio"]:checked+label span {
+    background-image: url(../icon/radio_checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="radio"]+label {
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    padding-top: 6px;
+    padding-left: 40px;
+}
+
+
+
+/*----------- 檔案上傳元件 -----------*/
+.file_upload .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file_upload .inputfile:focus+label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.file_upload .inputfile+label * {
+    pointer-events: none;
+}
+
+
+
+
+/*---------- 文字連結 -----------*/
+
+.link_text {
+    font-size: 14px;
+    color: #30B2EB;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link_text:hover {
+    color: #22a5de;
+}
+
+
+
+
+
+/*----------- HTML標籤初始化 ------------*/
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+
+
+/*------------- Bootstrap調整 -------------*/
+@media (min-width: 992px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1230px;
+    }
+}
