@@ -39,12 +39,13 @@ header {
     border-top: 3px solid transparent;
     border-bottom: 0;
     border-image: url(../images/line.png) 1 0 round;
+    background: #000;
 }
 
 header .navbar-brand {
     width: 150px;
     background-size: 90%;
-    background-image: url(../images/logo.png);
+    background-image: url(../images/logo-02.png);
     background-position: center;
     background-repeat: no-repeat;
     margin: 20px auto !important;
@@ -58,7 +59,7 @@ header .system_title {
     letter-spacing: 4px;
     margin-top: -20px;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 header .system_title span {
@@ -74,7 +75,7 @@ header .system_title span:after {
     height: 1px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-color: #ddd;
+    border-color: #aaa;
 }
 
 header .system_title span:before {
@@ -173,6 +174,10 @@ header .btn_logout {
     width: 100%;
 }
 
+.login_form .notice_info {
+    color: #ef5654;
+}
+
 
 
 /*------------------ 頁面-下載/上傳合約頁面 -------------------*/
@@ -207,9 +212,10 @@ header .btn_logout {
 
 .content_block .block_message {
     color: #ef5654;
+    font-size: 18px;
 }
 
-.content_block .thumbnail {
+.content_block a.thumbnail {
     margin-bottom: 30px;
     text-align: center;
     border: 0;
@@ -219,18 +225,37 @@ header .btn_logout {
         0 6.7px 10.3px rgba(0, 0, 0, 0.048),
         0 12.5px 20px rgba(0, 0, 0, 0.06);
     padding: 11px;
+    background-color: #FFF;
 }
 
-.content_block .thumbnail h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 20px;
+.content_block a.thumbnail:hover {
+    text-decoration: none;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 10.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 20px rgba(0, 0, 0, 0.06),
+        0 0 0 2px #5493ce inset;
 }
 
-.content_block .thumbnail .icon {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+.content_block a.thumbnail:active {
+    background-color: #eff7ff;
+}
+
+.content_block a.thumbnail h3 {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.content_block a.thumbnail p {
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+.content_block a.thumbnail .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 74px;
     background-color: #eae2e9;
     color: #af61a4;
     border-radius: 50%;
@@ -264,7 +289,11 @@ header .btn_logout {
 -                   共用設定                     -
 -                                                -
 ------------------------------------------------*/
-.wrapper {}
+.wrapper {
+    border-bottom: 4px solid transparent;
+    border-top: 0;
+    border-image: url(../images/line.png) 2 0 round;
+}
 
 .main_content {
     padding-top: 112px;
@@ -289,6 +318,11 @@ header .btn_logout {
     outline: none;
     border-radius: 0;
     transition: all .2s ease-out;
+}
+
+
+.btn.btn-lg {
+    font-size: 16px;
 }
 
 
@@ -334,24 +368,6 @@ header .btn_logout {
 
 
 
-
-
-
-/*  按鈕 - 大小  */
-
-/*.btn.btn-lg {
-    font-size: 16px;
-    padding: 25px 46px;
-    letter-spacing: 2px;
-    font-size: 20px;
-}*/
-
-
-
-
-
-
-
 /*----------- 表單 / 輸入框 ----------*/
 
 
@@ -381,7 +397,7 @@ header .btn_logout {
 }
 
 .fill_form .fill_item label.item_title {
-    color: #666;
+    color: #333;
     font-weight: normal;
     letter-spacing: 1px;
     margin-bottom: 6px;
@@ -413,7 +429,7 @@ header .btn_logout {
 
 .fill_form .fill_item.horizontal label.item_title {
     font-size: 16px;
-    margin-top: 6px;
+    margin-top: 12px;
     width: 85px;
     text-align: right;
 }
@@ -437,7 +453,12 @@ header .btn_logout {
 
 .form-control {
     border-radius: 0;
-    border-color: #d4d4d4;
+    border-color: #333;
+}
+
+
+.form-control.input-lg {
+    font-size: 16px;
 }
 
 
@@ -521,9 +542,9 @@ textarea.error {
 
 /*  輸入元件 - 提示提示  */
 .fill_item .notice_message {
-    color: #999;
-    font-size: 13px;
-    margin-top: 4px;
+    color: #5493ce;
+    font-size: 14px;
+    margin-top: 8px;
 }
 
 
