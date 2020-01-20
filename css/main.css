@@ -362,6 +362,23 @@ header .btn_logout {
     color: #fff;
 }
 
+.btn_style3 {
+    background: transparent;
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.btn_style3:hover {
+    background: #FFF;
+    color: #000;
+}
+
+.btn_style3:active,
+.btn_style3:focus {
+    background: #EEE;
+    color: #000;
+}
+
 
 
 
