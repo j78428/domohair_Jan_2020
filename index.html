@@ -235,6 +235,48 @@
                     </form>
                 </div>
             </div>
+            <div class="content_block bg_gray">
+                <div class="container">
+                    <h2 class="block_title">合約查詢區</h2>
+                    <br>
+                    <div class="fill_form">
+                        <div class="row">
+                            <div class="col-sm-10 col-md-10">
+                                <div class="fill_item horizontal">
+                                    <label class="item_title">會員帳號</label>
+                                    <div class="item_content">
+                                        <input type="text" class="form-control input-lg" placeholder="手機號碼" name="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <button class="btn btn_style1 btn-lg">查詢</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box"><!-- 預設隱藏，搜尋後才出現 -->
+                        <table class="table">
+                            <tr>
+                                <th>上傳日期</th>
+                                <th>會員帳號</th>
+                                <th>會員e-mail</th>
+                                <th>合約內容</th>
+                                <th>設計師</th>
+                            </tr>
+                            <tr>
+                                <td>2020/01/16</td>
+                                <td>0912654987</td>
+                                <td>abc@mail.com</td>
+                                <td><button class="btn btn_style2">調閱</button></td>
+                                <td>Kitty</td>
+                            </tr>
+                            <tr class="no_result" style="display: none;"><!-- 沒有結果時使用 -->
+                                <td colspan="5" align="center">沒有符合結果</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- .main_content : END -->
     </div>
