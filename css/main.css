@@ -32,7 +32,7 @@ header {
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
         0 12.5px 10px rgba(0, 0, 0, 0.06);
-    position: absolute;
+    position: fixed;
     z-index: 10;
     top: 0;
     width: 100%;
@@ -286,6 +286,11 @@ header .btn_logout {
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 10.3px rgba(0, 0, 0, 0.048), 0 12.5px 20px rgba(0, 0, 0, 0.06);
     background-color: #FFF;
     border-radius: 6px;
+    overflow: hidden;
+}
+
+.content_block .result_box .table {
+    margin-bottom: 0;
 }
 
 .content_block .result_box .table tr td, 
@@ -296,7 +301,8 @@ header .btn_logout {
 }
 
 .content_block .result_box .table tr th {
-    border-bottom: 1px solid #DDD;
+    background-color: #000;
+    color: #FFF;
 }
 
 
