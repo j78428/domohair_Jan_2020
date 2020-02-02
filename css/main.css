@@ -40,6 +40,7 @@ header {
     border-bottom: 0;
     border-image: url(../images/line.png) 1 0 round;
     background: #000;
+    
 }
 
 header .navbar-brand {
